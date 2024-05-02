@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #6ea8ff; /* Background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  input{
+    outline: none;
+  }
+
+  #loginHeader{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: slideIn 0.5s ease;
+  }
+
+  .login-container {
+    background: linear-gradient(to right, #0064fa, #4a90e2);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease;
+    width: 50vw;
+    height: 450px;
+    justify-content: center;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: slideIn 0.5s ease;
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  input[type="email"],
+  input[type="password"],
+  input[type="submit"] {
+    width: calc(100% - 20px); /* Adjusted width */
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background color */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    transition: all 0.3s ease;
+    font-size: 1.1em;
+    transform: scale(1);
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    color: #333; /* Text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  input[type="submit"] {
+    background-color: #0064fa;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  input[type="submit"]:hover {
+    background-color: #4a90e2;
+    transform: scale(1.1);
+  }
+
+  input[type="submit"]:active {
+    transform: scale(0.9);
+  }
+
+  .login-footer {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    animation: slideIn 0.5s ease;
+  }
+
+  .login-footer a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    transition: border-color 0.3s;
+  }
+
+  .login-footer a:hover {
+    border-color: transparent;
+  }
+
+  .error {
+    color: red;
+    margin-top: 5px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .login-container {
+      width: calc(20vw + 100px);
+    }
+  }

@@ -1,0 +1,111 @@
+/* scheduleCreator.css */
+
+.schedule-creator-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 750px;
+  display: grid;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.core {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="radio"] {
+  display: none; /* Hide the radio inputs */
+}
+
+.autocomplete-container {
+  margin-bottom: 20px;
+}
+
+label{
+    margin: 20px;
+}
+
+.math{
+    display: flex;
+    justify-content: center;
+}
+
+.arts{
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.suggestions-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.suggestions-list li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.suggestions-list li:hover {
+  background-color: #eaeaea;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: black;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.radio-group {
+  margin-bottom: 10px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  margin-bottom: 5px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.radio-group input[type="radio"] + label::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.radio-group input[type="radio"]:checked + label::before {
+  background-color: #0064fa;
+  border-color: #0064fa;
+}
+
+.radio-group input[type="radio"]:checked + label {
+  background-color: #0064fa;
+  color: #fff;
+  border-color: #0064fa;
+}

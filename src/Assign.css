@@ -1,0 +1,30 @@
+#assignmentName{
+    outline: none;
+    border-radius: 10px;
+    height: 35px;
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+#assign{
+    display: flex;
+    flex-direction: column;
+}
+
+#assignmentDueDate{
+    border-radius: 10px;
+    height: 35px;
+    width: 310px;
+    margin-bottom: 20px;
+}
+
+#assignmentDueTime{
+    border-radius: 10px;
+    height: 35px;
+    width: 310px;
+    margin-bottom: 20px;
+}
+
+#assignmentName{
+    margin-bottom: 20px;
+}

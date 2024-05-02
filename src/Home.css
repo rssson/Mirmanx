@@ -1,0 +1,135 @@
+/* Dashboard.css */
+.dashboard {
+  height: 100%;
+  display: grid;
+  grid-template-areas: "a b";
+  grid-template-columns: 1.5fr 1fr;
+  gap: 20px;
+  width: calc(100vw - 40px);
+  padding: 20px;
+  background-color: #f0f0f0;
+  align-items: center;
+}
+
+.fullDash {
+  display: flex;
+  height: 100vh;
+}
+
+.card {
+  z-index: 900;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.leftDashboard {
+  grid-area: a; /* Removed quotes around "a" and "b" */
+}
+
+.rightDashboard {
+  grid-area: b; /* Removed quotes around "a" and "b" */
+  display: grid;
+  row-gap: 20px;
+  grid-template-areas: 
+    "a"
+    "b";
+  grid-template-rows: 1fr 1fr;
+}
+
+.assignments {
+  grid-area: a;
+  height: calc(50vh - 60px)
+}
+
+.ai-feature {
+  grid-area: b;
+}
+
+.leftDashboard,
+.rightDashboard {
+  padding: 20px;
+}
+
+#scheduleBottom {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#scheduleLeft {
+  align-self: left; /* Changed to align-self: flex-start */
+  flex: 0.5; /* Changed to use decimal notation */
+  justify-self: left;
+  font-size: 15px; /* Changed to justify-self: flex-start */
+  div {
+    margin-top: 16px;
+  }
+  h2 {
+    text-align: left;
+  }
+}
+
+#scheduleRight {
+  position: relative;
+  float: right;
+  font-size: 15px;;
+  flex: 0.5; /* Changed to use decimal notation */
+  justify-content: flex-end; /* Changed to use flex-end */
+  div {
+    margin-top: 16px;
+  }
+  h2 {
+    text-align: right;
+  }
+}
+
+.schedule {
+  padding-left: 35px;
+  padding-right: 35px;
+  height: calc(100vh - 60px);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+* {
+  overflow: auto;
+}
+
+#line {
+  border: 1px solid lightgrey;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+.assignment-name {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.assignment-class {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.cardTitle {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
